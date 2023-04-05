@@ -1,5 +1,6 @@
 const express = require('express');
-const dbs = require('mongodb');
+const path = require('path');
+// const dbs = require('mongodb');
 
 const app = express();
 
@@ -13,6 +14,8 @@ app.use(express.urlencoded({extended: true}))
 app.get('/health', (req, res)=>{
   res.send("hello shhs")
 });
+
+app.use('/', express.static(path.join(__dirname, 'public')));
 
 app.listen(PORT, ()=>{
   console.log(`server listening at ${PORT}`);
