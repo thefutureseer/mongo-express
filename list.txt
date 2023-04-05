@@ -1,12 +1,12 @@
-everything shush needs:
+Schema based on everything shush needs:
 
-Profile:
-Knowledgable resources and masters
+Profiles:
+Knowledgable human resources and master speakers
 users
 
 items
 
-videos
+videos 
 
 prices/donations
 totals
@@ -18,4 +18,3 @@ message board
 text messages
 
 confession booth
-
