@@ -9,7 +9,8 @@ const PORT = process.env.PORT || 8080
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))
 
-app.get('/', (req, res)=>{
+//health check
+app.get('/health', (req, res)=>{
   res.send("hello shhs")
 });
 
